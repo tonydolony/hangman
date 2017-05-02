@@ -1,0 +1,57 @@
+<section class="home animated fadeInLeft">
+    <div class="container">
+        <div class="col-sm-10 col-sm-offset-1 ">
+            <div class="content-box clearfix">
+                <div class="first" ng-hide="first || home.lost || home.win">
+                    <img src="assets/img/compiledimg/game_dog_hungry.gif" class="img-responsive center-block" />
+                    <h1 class="text-center">Try to fit the N-DOG!</br>Difficulty:</h1>
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <md-button class="md-raised md-default pull-left" ng-click="home.action.getWords(1) ; first = !first">Normal</md-button>
+                        <md-button class="md-raised md-default pull-right" ng-click="home.action.getWords(0) ; first = !first">Hard</md-button>
+                    </div>
+                </div>
+                <div class="second" ng-hide="!first || home.lost || home.win">
+                    <div class="col-sm-3 tl">
+                        <ul class="list-unstyled center-block">
+                            <li ng-repeat="item in home.output" ng-class="{'active' : item.guesed}"><span class="label label-default" ng-class="{'label label-success': item.guesed}">{{$index + 1}}. {{item.word}}</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9 tr">
+                        <div>
+                            <ul class="list-unstyled list-inline text-center">
+                                <li ng-repeat="letter in home.letters">
+                                    <md-button class="md-raised md-default" ng-click="home.action.check(letter.let,$index)"  ng-disabled="letter.clicked">{{letter.let}}</md-button>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled list-inline">
+                                <li ng-repeat="item in home.fs track by $index">
+                                    <span ng-hide="item.chosen">_</span>
+                                    <span ng-show="item.chosen">{{ item.let }}</span>
+                                </li>
+                            </ul>
+                            <h4 class="label label-default pull-right">Tries left: <b>{{home.left}}</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" ng-show="home.lost">
+                   <h3 class="text-center">N-Dog ate nothing - He is angry now!</h3>
+                    <img src="assets/img/compiledimg/game_dog_mad.gif" class="img-responsive center-block" />
+                    <h1 class="text-center">Give hope to the N-DOG and try again!</h1>
+                    <md-button class="md-raised md-default pull-right" ng-click="home.action.getWords() ; first = !first">Sure!</md-button>
+                    <md-button class="md-raised md-default pull-left" ng-click="home.action.leave()">No thanks!</md-button>
+                </div>
+                <div class="fourth" ng-show="home.win">
+                    <h3 class="text-center">You won!</h3>
+                    <h3 class="text-center">N-dog just eaten: </h3>
+                    <ul class="list-unstyled text-center">
+                        <li ng-repeat="item in home.output">{{item.word}}</li>
+                    </ul>
+                    <p class="text-center">N-dog loves you! The N-DOG is full now so he can show you N-EDUCATIO <a href="https://www.n-educatio.pl/?lang=pl" target="_blank">website!</a></p>
+                    <img src="assets/img/compiledimg/game_dog_love.gif" class="img-responsive center-block" />
+                    <md-button class="md-raised md-default pull-right" ng-click="home.action.getWords()">I want feet the dog again!</md-button>
+                    <md-button class="md-raised md-default pull-left" ng-click="home.action.leave()">No thanks!</md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

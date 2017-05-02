@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>n-dog</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab" >
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="assets/css_dev/resets.css" />
+    <link rel="stylesheet" href="assets/css_dev/home.css" />
+</head>
+<body ng-app="ndog">
+<header>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="assets/img/ndoglogo.png" class="img-responsive" />
+            </a>
+        </div>
+    </nav>
+</header>
+<article>
+<ui-view></ui-view>
+</article>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+
+
+<!--BUILD-->
+<script src="index.module.js"></script>
+<script src="index.route.js"></script>
+<script src="index.run.js"></script>
+<script src="index.config.js"></script>
+<script src="index.constants.js"></script>
+<script src="app/services/mainService.js"></script>
+<script src="app/controllers/homeController.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: transparent url('../img/ndoglogo.png');
+  background-size: 20%;
+}
+body p,
+body span {
+  font-family: 'Roboto Slab', serif;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font: 200 26px/1.2 'Roboto Slab', serif;
+}
+body header nav.navbar-fixed-top {
+  background-color: #fff;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+body header nav.navbar-fixed-top a.navbar-brand img {
+  width: 50px;
+}
+body article section.home {
+  background: transparent url('../img/compiledimg/hm.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10% ;
+}
+body article section.home div.container div.content-box {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+body article section.home div.container div.content-box div.first h1 {
+  padding: 25px 0;
+}
+body article section.home div.container div.content-box div.second div.tr,
+body article section.home div.container div.content-box div.second div.tl {
+  padding: 0;
+}
+body article section.home div.container div.content-box div.second div.tl ul li {
+  text-transform: uppercase;
+  padding: 20px;
+}
+body article section.home div.container div.content-box div.second div.tl ul li span {
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body article section.home div.container div.content-box div.second div.tl ul li:nth-child(1) {
+  width: 200px;
+}
+body article section.home div.container div.content-box div.second div.tl ul li.active span {
+  -moz-filter: inherit;
+  -o-filter: inherit;
+  -ms-filter: inherit;
+  filter: inherit;
+}
+body article section.home div.container div.content-box div.second div.tr {
+  position: relative;
+}
+body article section.home div.container div.content-box div.second div.tr > div {
+  padding: 0 50px 50px 50px;
+}
+body article section.home div.container div.content-box div.second div.tr > div ul li {
+  font-size: 40px;
+}
+body article section.home div.container div.content-box div.second div.tr > div ul li button {
+  margin: 10px;
+}
+body article section.home div.container div.content-box div.second div.tr > div ul:nth-of-type(2) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 0;
+}
+body article section.home div.container div.content-box div.second div.tr:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+body article section.home div.container div.content-box div.fourth ul {
+  padding: 20px 0;
+}
+body article section.home div.container div.content-box img {
+  max-width: 300px;
+}
+body article section.home div.container span.item {
+  display: none;
+}
+body article section.home .md-raised {
+  display: block;
+  margin: auto;
+}

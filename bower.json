@@ -1,0 +1,17 @@
+{
+  "name": "hangman",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "tomaszd"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

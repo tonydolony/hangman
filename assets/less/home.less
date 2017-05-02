@@ -1,0 +1,129 @@
+body {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: transparent url('../img/ndoglogo.png');
+  background-size: 20%;
+  p,span{
+    font-family: 'Roboto Slab', serif;;
+  }
+  h1,h2,h3,h4 {
+    font: 200 26px/1.2 'Roboto Slab', serif;
+  }
+  header {
+    nav.navbar-fixed-top {
+      background-color: #fff;
+      box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+      a.navbar-brand {
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+  article {
+    section.home {
+      background: transparent url('../img/compiledimg/hm.jpg')no-repeat center;
+      background-size: cover;
+      width: 100%;
+      min-height: 100vh;
+      padding-top: 10% ;
+      div.container {
+        div.content-box {
+          padding: 30px;
+          background-color: #fff;
+          box-shadow: 2px 3px 1px rgba(0,0,0,0.5);
+          div.first {
+            h1 {
+              padding: 25px 0;
+            }
+          }
+          div.second {
+            div.tr,div.tl {
+              padding: 0;
+            }
+            div.tl {
+              ul {
+                li {
+                  text-transform: uppercase;
+                  padding: 20px;
+                  span {
+                    -webkit-filter: blur(5px);
+                    -moz-filter: blur(5px);
+                    -o-filter: blur(5px);
+                    -ms-filter: blur(5px);
+                    filter: blur(5px);
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                  }
+                  &:nth-child(1) {
+                    width: 200px;
+                  }
+                }
+                li.active {
+                  span {
+                    -webkit-filter:inherit;
+                    -moz-filter:inherit;
+                    -o-filter: inherit;
+                    -ms-filter: inherit;
+                    filter: inherit;
+                  }
+                }
+
+              }
+            }
+            div.tr {
+              position: relative;
+             > div {
+               padding: 0 50px 50px 50px;
+                ul {
+                  li {
+                    font-size: 40px;
+                    button {
+                      margin: 10px;
+                    }
+                  }
+                }
+                ul:nth-of-type(2){
+                  display: flex;
+                  justify-content:space-around;
+                  padding: 30px 0;
+                }
+
+              }
+              &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                left:0;
+                top:0;
+                width: 1px;
+                background-color: rgba(0,0,0,0.1);
+                height: 100%;
+              }
+            }
+          }
+          div.fourth {
+            ul {
+              padding: 20px 0;
+            }
+          }
+          img {
+            max-width: 300px;
+          }
+        }
+        span.item {
+          display: none;
+        }
+      }
+      .md-raised {
+        display: block;
+
+        margin: auto;
+      }
+    }
+  }
+}
