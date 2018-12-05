@@ -1,2 +1,2 @@
 # hangman
-a hangman game
+a hangman game build in AngularJS
